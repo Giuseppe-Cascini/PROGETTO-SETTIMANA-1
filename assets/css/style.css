@@ -166,7 +166,7 @@ main section {
 }
 
 main section h2::before {
-    content: "- ";
+    content: "\2756";
     color: hsl(45, 90%, 50%);
 }
 
@@ -254,4 +254,8 @@ caption {
     text-align: start;
     color:hsl(220, 30%, 40%);
     font-style:italic ;
+}
+.skill-list p{
+    color: #6f6856;
+    font-size: small;
 }
