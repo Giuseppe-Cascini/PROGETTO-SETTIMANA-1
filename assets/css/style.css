@@ -62,7 +62,7 @@ main h3 {
 #chi-sono > p:first-of-type {
     font-size: 1.1em;
     font-style: italic;
-    color: #1F3D7A;
+    
 }
 
 .skill-list li:nth-child(odd) {
@@ -136,6 +136,7 @@ main {
     max-width: 920px;
     margin: 0, auto;
     padding: 40px 20px;
+    margin-top: -60px;
 }
 
 main section {
