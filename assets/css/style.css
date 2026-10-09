@@ -37,9 +37,8 @@ header {
 }
 
 #site-header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
-    font-style: italic;
 }
 
 .tagline {
@@ -332,4 +331,31 @@ td i {
     margin-right: 8px;
 }
 
+.bar {
+    background-color:#ece6d8 ;
+    border-radius: 5px;
+    height: 12px;
+    width: 100%;
+    margin-top: 10%;
+}
 
+.bar-fill {
+    background-color: hsl(45, 90%, 50%);
+    height: 100%;
+    border-radius: 5px;
+}
+.skill-list tbody tr:nth-child(1) .bar-fill {
+    width: 80%;
+}
+.skill-list tbody tr:nth-child(2) .bar-fill {
+    width: 70%;
+}
+.skill-list tbody tr:nth-child(3) .bar-fill {
+    width: 55%;
+}
+.skill-list tbody tr:nth-child(4) .bar-fill {
+    width: 45%;
+}
+.skill-list tbody tr:nth-child(5) .bar-fill {
+    width: 75%;
+}
