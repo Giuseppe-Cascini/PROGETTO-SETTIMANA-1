@@ -11,7 +11,8 @@ body {
     font-size: 16px;
     line-height: 1.7;
     margin: 0;
-    background-color: #fafafa;
+    background-color: #f4f1ec;
+    color: #2b2b2b;
 }
 
 header {
@@ -64,6 +65,13 @@ main h3 {
     font-style: italic;
     
 }
+#chi-sono,
+#competenze,
+#esperienze,
+#progetti,
+#contattami {
+    background-color: white;
+}
 
 .skill-list li:nth-child(odd) {
     background-color: #f5f7fb;
@@ -89,13 +97,16 @@ label {
     font-weight: bold;
     color: #1F3D7A;
 }
+.l-check {
+    color: #2b2b2b;
+}
 
 input,
 textarea,
 select {
     font-family: "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
-    width: 60%;
+    width: 100%;
     background-color: #ffffff;
 }
 
@@ -178,7 +189,7 @@ textarea::placeholder {
 input,
 textarea,
 select {
-    background-color: #f5f7fb;
+    background-color: #fbf8f1;
 }
 
 .avatar {
