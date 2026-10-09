@@ -7,13 +7,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.7;
     margin: 0;
     background-color: #f4f1ec;
     color: #2b2b2b;
 }
+h1, 
+h2, 
+h3,
+#p-ricetta > p:first-of-type::first-letter,
+#c-presentazione > p:first-of-type::first-letter,
+#p-personale > p:first-of-type::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+
 
 header {
     background-color: hsl(220, 40%, 20%);
@@ -94,9 +104,14 @@ main h3 {
 .skill-list li:first-child {
     font-weight: bold;
 }
-
+.skill-list i {
+    color: #1F3D7A;
+}
+.skill-list td b {
+    color: #1F3D7A;
+}
 .project:nth-of-type(odd) {
-    background-color: hsl(45, 60%, 96%);
+    background-color: hsl(45, 60%, 96%); 
 }
 
 .project:nth-of-type(even) {
@@ -155,7 +170,16 @@ button:hover {
     color: #ffffff;
     text-align: center;
     font-size: 0.9rem;
+    padding: 32px 20px;
+    text-align: center;
 }
+#site-footer i {
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 8px;
+
+}
+
 
 input[type="checkbox"] {
     width: auto;
@@ -180,6 +204,7 @@ main section {
 main section h2::before {
     content: "\2756";
     color: hsl(45, 90%, 50%);
+    margin-right: 8px;
 }
 
 #site-header {
@@ -280,3 +305,31 @@ caption {
     display:inline-block;
     border-bottom: 2px solid hsl(45, 90%, 50%);
 }
+.home i {
+    margin-right: 8px;
+   
+}
+.home {
+    text-decoration: none;
+}
+.git {
+    text-decoration: none;
+    color: #1F3D7A;
+    
+}
+.project i {
+    margin-right: 8px;
+}
+td i {
+    margin-right: 8px;
+}
+#p-ricetta,
+#c-presentazione,
+#p-personale {
+    background-color: white;
+}
+.fa-github {
+    margin-right: 8px;
+}
+
+
