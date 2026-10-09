@@ -42,6 +42,12 @@ nav a {
     color: white;
     font-weight: bold;
     line-height: 3;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav i {
+    margin-right: 10px;
 }
 
 nav a:hover {
