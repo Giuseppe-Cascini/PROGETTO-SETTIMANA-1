@@ -427,10 +427,10 @@ main {
     input,
     select,
     textarea {
-        width: 60%
+        width: 70%
     }
 
     button {
-        width: 30%
+        width: 35%
     }
 }
