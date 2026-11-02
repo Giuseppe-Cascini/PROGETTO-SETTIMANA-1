@@ -186,7 +186,8 @@ button:hover {
 }
 
 #site-footer i:hover {
-    background-color: hsl(45, 90%, 50%);;
+    background-color: hsl(45, 90%, 50%);
+    ;
     color: #172136;
     cursor: pointer;
 }
@@ -390,23 +391,42 @@ td i {
 .skill-list tbody tr:nth-child(5) .bar-fill {
     width: 75%;
 }
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 @media (min-width: 768px) {
-    .avatar{
+    .avatar {
         float: left;
         margin: 0 24px 12px 0;
     }
-    input, 
+
+    input,
     select,
-    textarea
-    {
+    textarea {
         width: 60%
     }
 
     button {
         width: 30%
+    }
+}
+
+@media (min-width: 1200px) {
+    .avatar {
+        float: left;
+        margin: 0 24px 12px 0;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 70%
+    }
+
+    button {
+        max-width: 35%
     }
 }
