@@ -420,13 +420,17 @@ img {
         margin: 0 24px 12px 0;
     }
 
+main {
+    max-width: 920px;
+    margin: 0 auto;
+}
     input,
     select,
     textarea {
-        max-width: 70%
+        width: 60%
     }
 
     button {
-        max-width: 35%
+        width: 30%
     }
 }
