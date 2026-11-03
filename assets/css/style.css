@@ -35,6 +35,9 @@ header {
     background-position: center;
     color: #ffffff;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 #site-header h1 {
@@ -273,6 +276,13 @@ textarea::placeholder {
     color: #ffffff;
     border-radius: 3px;
     font-size: 0.75rem;
+    position:absolute;
+    top:0;
+    right:0;
+
+}
+.project {
+    position:relative;
 }
 
 nav ul li {
@@ -419,11 +429,7 @@ img {
         float: left;
         margin: 0 24px 12px 0;
     }
-
-main {
-    max-width: 920px;
-    margin: 0 auto;
-}
+    
     input,
     select,
     textarea {
