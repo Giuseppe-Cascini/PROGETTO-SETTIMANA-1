@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    scroll-padding-top: 420px;
+}
+
 body {
     font-family: 'Inter', Arial, sans-serif;
     font-size: 16px;
@@ -236,6 +240,7 @@ main section h2::before {
     padding: 8px 16px;
     margin: 0 4px;
     border-radius: 4px;
+    text-align: center;
 }
 
 input::placeholder,
@@ -420,7 +425,45 @@ img {
 }
 
 #tornaSu:hover {
-    background-color:#1F3D7A;
+    background-color:white;
+    border-radius: 50%;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2000;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 25px;
+	border-radius: 10px;
+	max-width: 480px;
+}
+
+#scrivimi {
+	font-size: 1.2rem;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#scrivimi:hover {
+    color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.closeModal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+	cursor: pointer;
 }
 
 @media (min-width: 768px) {

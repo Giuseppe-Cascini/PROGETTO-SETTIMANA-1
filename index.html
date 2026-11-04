@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap"
         rel="stylesheet" />
+    <script type="module" src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -176,40 +177,48 @@
         </section>
         <section id="contattami">
             <h2>Contattami</h2>
-            <p>Compila il form per scrivermi. Rispondo entro 24 ore nei giorni lavorativi.</p>
-            <form>
-                <label for="Nome">Nome</label>
-                <br>
-                <input type="text" id="nome" name="nome" placeholder="il tuo nome">
-                <br><br>
-                <label for="email">Email</label>
-                <br>
-                <input type="email" id="email" name="email" placeholder="tu@esempio.it">
-                <br><br>
-                <label for="select">Motivo del contatto</label>
-                <br>
-                <select name="select" id="select">
-                    <option value=""></option>
-                    <option value="Proposta di lavoro">Proposta di lavoro</option>
-                    <option value="Informazioni generali">Informazioni generali</option>
-                    <option value="Proposta di stage">Proposta di stage</option>
-                    <option value="Proposta di stage">Corso di formazione</option>
-                </select>
-                <br><br>
-                <label for="data">Data preferita per la risposta</label>
-                <br>
-                <input type="date">
-                <br><br>
-                <label for="messaggio">Messaggio</label>
-                <br>
-                <textarea name="messsaggio" id="messaggio" placeholder="Scrivi qui il tuo messaggio..." rows="5"
-                    required></textarea>
-                <br><br>
-                <input type="checkbox" id="checkbox">
-                <label class="l-check" for="checkbox">Accetto di essere ricontattato all'indirizzo indicato</label>
-                <br><br>
-                <button type="submit" id="bottone"><i class="fa-mosaic fa-solid fa-paper-plane"></i>Invia</button>
-            </form>
+            <button type="button" id="scrivimi">Scrivimi</button>
+            <div class="overlay">
+                <div class="modal">
+                    <button type="button" class="closeModal">❌</button>
+                    <p>Compila il form per scrivermi. Rispondo entro 24 ore nei giorni lavorativi.</p>
+                    <form>
+                        <label for="Nome">Nome</label>
+                        <br>
+                        <input type="text" id="nome" name="nome" placeholder="il tuo nome">
+                        <br><br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" name="email" placeholder="tu@esempio.it">
+                        <br><br>
+                        <label for="select">Motivo del contatto</label>
+                        <br>
+                        <select name="select" id="select">
+                            <option value=""></option>
+                            <option value="Proposta di lavoro">Proposta di lavoro</option>
+                            <option value="Informazioni generali">Informazioni generali</option>
+                            <option value="Proposta di stage">Proposta di stage</option>
+                            <option value="Proposta di stage">Corso di formazione</option>
+                        </select>
+                        <br><br>
+                        <label for="data">Data preferita per la risposta</label>
+                        <br>
+                        <input type="date">
+                        <br><br>
+                        <label for="messaggio">Messaggio</label>
+                        <br>
+                        <textarea name="messsaggio" id="messaggio" placeholder="Scrivi qui il tuo messaggio..." rows="5"
+                            required></textarea>
+                        <br><br>
+                        <input type="checkbox" id="checkbox">
+                        <label class="l-check" for="checkbox">Accetto di essere ricontattato all'indirizzo
+                            indicato</label>
+                        <br><br>
+                        <button type="submit" id="bottone"><i
+                                class="fa-mosaic fa-solid fa-paper-plane"></i>Invia</button>
+                    </form>
+                </div>
+            </div>
             <br>
             <a class="home" href="index.html"><i class="fa-solid fa-house"></i>Torna su</a>
         </section>
